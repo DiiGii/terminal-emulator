@@ -12,7 +12,8 @@ The UI is a popup that looks pretty similar to the terminal popup. To implement 
 
 ## Pseudoterminal
 Next, we create a pseudoterminal that interacts with the PTY master and the PTY slave. 
-![terminal_diagram](https://github.com/user-attachments/assets/6cdcc87b-1413-4d40-b760-89cfe07005e2)
+<img width="774" alt="Screenshot 2024-12-25 at 10 19 55 PM" src="https://github.com/user-attachments/assets/57e5f796-f04d-445b-a639-b36fe04eded0" />
+
 
 The PTY master receives input (like key presses) and sends them to the PTY slave, which communicates with bash. Finally, the PTY slave sends the output from bash (like command results or error messages) back to the PTY master, which then sends it to the terminal emulator for display to the user.
 
